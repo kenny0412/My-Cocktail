@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,26 @@
 		B93410DF24E5CA91009F6AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93410DD24E5CA91009F6AEF /* Main.storyboard */; };
 		B93410E124E5CA97009F6AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93410E024E5CA97009F6AEF /* Assets.xcassets */; };
 		B93410E424E5CA97009F6AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93410E224E5CA97009F6AEF /* LaunchScreen.storyboard */; };
+		B934439224E77AB800F5B63E /* AllCocktails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934439124E77AB800F5B63E /* AllCocktails.swift */; };
+		B934439524E83F2000F5B63E /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934439424E83F2000F5B63E /* Connection.swift */; };
+		B934439824E8952200F5B63E /* RandomStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B934439724E8952200F5B63E /* RandomStoryboard.storyboard */; };
+		B934439A24E8954800F5B63E /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B934439924E8954800F5B63E /* SearchStoryboard.storyboard */; };
+		B934439C24E8957000F5B63E /* CocktailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B934439B24E8957000F5B63E /* CocktailsStoryboard.storyboard */; };
+		B934439E24E8F4EF00F5B63E /* AllCocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934439D24E8F4EF00F5B63E /* AllCocktailsViewController.swift */; };
+		B9DA2E8B24E99704005FAE92 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2E8A24E99704005FAE92 /* RandomViewController.swift */; };
+		B9DA2E8D24E998AD005FAE92 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2E8C24E998AD005FAE92 /* SearchViewController.swift */; };
+		B9DA2E9024E9AAAD005FAE92 /* ComponentStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2E8F24E9AAAD005FAE92 /* ComponentStyles.swift */; };
+		B9DA2E9324E9CB55005FAE92 /* ConstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2E9224E9CB55005FAE92 /* ConstApp.swift */; };
+		B9DA2E9C24EB66E6005FAE92 /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2E9B24EB66E6005FAE92 /* CocktailCell.swift */; };
+		B9DA2EA124F0201F005FAE92 /* DetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DA2EA024F0201F005FAE92 /* DetailStoryboard.storyboard */; };
+		B9DA2EA324F02043005FAE92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2EA224F02043005FAE92 /* DetailViewController.swift */; };
+		B9DA2EA524F02526005FAE92 /* DetailCocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DA2EA424F02526005FAE92 /* DetailCocktail.swift */; };
+		B9DA739E24F384250068927D /* MapStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DA739D24F384250068927D /* MapStoryboard.storyboard */; };
+		FCA882EA8F0FB5BEF86D0B30 /* Pods_MyCocktail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A5263FF45B10D65D41BF4D /* Pods_MyCocktail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DCF2FD959D6CE139C372023 /* Pods-MyCocktail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCocktail.debug.xcconfig"; path = "Target Support Files/Pods-MyCocktail/Pods-MyCocktail.debug.xcconfig"; sourceTree = "<group>"; };
 		B93410D424E5CA91009F6AEF /* MyCocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93410D724E5CA91009F6AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B93410D924E5CA91009F6AEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,23 @@
 		B93410E024E5CA97009F6AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93410E324E5CA97009F6AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B93410E524E5CA97009F6AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B934439124E77AB800F5B63E /* AllCocktails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCocktails.swift; sourceTree = "<group>"; };
+		B934439424E83F2000F5B63E /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		B934439724E8952200F5B63E /* RandomStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomStoryboard.storyboard; sourceTree = "<group>"; };
+		B934439924E8954800F5B63E /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		B934439B24E8957000F5B63E /* CocktailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CocktailsStoryboard.storyboard; sourceTree = "<group>"; };
+		B934439D24E8F4EF00F5B63E /* AllCocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCocktailsViewController.swift; sourceTree = "<group>"; };
+		B9DA2E8A24E99704005FAE92 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		B9DA2E8C24E998AD005FAE92 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B9DA2E8F24E9AAAD005FAE92 /* ComponentStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyles.swift; sourceTree = "<group>"; };
+		B9DA2E9224E9CB55005FAE92 /* ConstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstApp.swift; sourceTree = "<group>"; };
+		B9DA2E9B24EB66E6005FAE92 /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		B9DA2EA024F0201F005FAE92 /* DetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStoryboard.storyboard; sourceTree = "<group>"; };
+		B9DA2EA224F02043005FAE92 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B9DA2EA424F02526005FAE92 /* DetailCocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCocktail.swift; sourceTree = "<group>"; };
+		B9DA739D24F384250068927D /* MapStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapStoryboard.storyboard; sourceTree = "<group>"; };
+		BE83F9CE32A35A83DA54E8BA /* Pods-MyCocktail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCocktail.release.xcconfig"; path = "Target Support Files/Pods-MyCocktail/Pods-MyCocktail.release.xcconfig"; sourceTree = "<group>"; };
+		C6A5263FF45B10D65D41BF4D /* Pods_MyCocktail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCocktail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +65,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA882EA8F0FB5BEF86D0B30 /* Pods_MyCocktail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3027673FDA690BDCE77BC0B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DCF2FD959D6CE139C372023 /* Pods-MyCocktail.debug.xcconfig */,
+				BE83F9CE32A35A83DA54E8BA /* Pods-MyCocktail.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B93410CB24E5CA91009F6AEF = {
 			isa = PBXGroup;
 			children = (
 				B93410D624E5CA91009F6AEF /* MyCocktail */,
 				B93410D524E5CA91009F6AEF /* Products */,
+				3027673FDA690BDCE77BC0B4 /* Pods */,
+				C7AFF94B35BB70C67BDBD436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +102,94 @@
 		B93410D624E5CA91009F6AEF /* MyCocktail */ = {
 			isa = PBXGroup;
 			children = (
+				B93410ED24E5CBA4009F6AEF /* Views */,
+				B93410EC24E5CB98009F6AEF /* ViewControllers */,
+				B93410EB24E5CB40009F6AEF /* Models */,
+				B9DA2E9124E9CB1A005FAE92 /* Helpers */,
 				B93410D724E5CA91009F6AEF /* AppDelegate.swift */,
 				B93410D924E5CA91009F6AEF /* SceneDelegate.swift */,
-				B93410DB24E5CA91009F6AEF /* ViewController.swift */,
-				B93410DD24E5CA91009F6AEF /* Main.storyboard */,
 				B93410E024E5CA97009F6AEF /* Assets.xcassets */,
 				B93410E224E5CA97009F6AEF /* LaunchScreen.storyboard */,
 				B93410E524E5CA97009F6AEF /* Info.plist */,
 			);
 			path = MyCocktail;
+			sourceTree = "<group>";
+		};
+		B93410EB24E5CB40009F6AEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B934439324E83EE700F5B63E /* API */,
+				B934439124E77AB800F5B63E /* AllCocktails.swift */,
+				B9DA2EA424F02526005FAE92 /* DetailCocktail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B93410EC24E5CB98009F6AEF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B93410DB24E5CA91009F6AEF /* ViewController.swift */,
+				B934439D24E8F4EF00F5B63E /* AllCocktailsViewController.swift */,
+				B9DA2E8A24E99704005FAE92 /* RandomViewController.swift */,
+				B9DA2E8C24E998AD005FAE92 /* SearchViewController.swift */,
+				B9DA2EA224F02043005FAE92 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B93410ED24E5CBA4009F6AEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B934439624E894EA00F5B63E /* Storyboards */,
+				B9DA2E9624EB64A5005FAE92 /* Cells */,
+				B9DA2E8F24E9AAAD005FAE92 /* ComponentStyles.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B934439324E83EE700F5B63E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B934439424E83F2000F5B63E /* Connection.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B934439624E894EA00F5B63E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B93410DD24E5CA91009F6AEF /* Main.storyboard */,
+				B934439B24E8957000F5B63E /* CocktailsStoryboard.storyboard */,
+				B934439724E8952200F5B63E /* RandomStoryboard.storyboard */,
+				B934439924E8954800F5B63E /* SearchStoryboard.storyboard */,
+				B9DA2EA024F0201F005FAE92 /* DetailStoryboard.storyboard */,
+				B9DA739D24F384250068927D /* MapStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B9DA2E9124E9CB1A005FAE92 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA2E9224E9CB55005FAE92 /* ConstApp.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B9DA2E9624EB64A5005FAE92 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA2E9B24EB66E6005FAE92 /* CocktailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C7AFF94B35BB70C67BDBD436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A5263FF45B10D65D41BF4D /* Pods_MyCocktail.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +199,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B93410E824E5CA97009F6AEF /* Build configuration list for PBXNativeTarget "MyCocktail" */;
 			buildPhases = (
+				63A6342F55937CBCCD84F511 /* [CP] Check Pods Manifest.lock */,
 				B93410D024E5CA91009F6AEF /* Sources */,
 				B93410D124E5CA91009F6AEF /* Frameworks */,
 				B93410D224E5CA91009F6AEF /* Resources */,
+				2389FCDE9FAADE5AB859DF60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MyCocktail;
+			packageProductDependencies = (
+			);
 			productName = MyCocktail;
 			productReference = B93410D424E5CA91009F6AEF /* MyCocktail.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +240,9 @@
 				Base,
 			);
 			mainGroup = B93410CB24E5CA91009F6AEF;
+			packageReferences = (
+				B9DA2E9D24EB8EA9005FAE92 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = B93410D524E5CA91009F6AEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,21 +257,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B934439824E8952200F5B63E /* RandomStoryboard.storyboard in Resources */,
+				B934439A24E8954800F5B63E /* SearchStoryboard.storyboard in Resources */,
 				B93410E424E5CA97009F6AEF /* LaunchScreen.storyboard in Resources */,
+				B9DA2EA124F0201F005FAE92 /* DetailStoryboard.storyboard in Resources */,
 				B93410E124E5CA97009F6AEF /* Assets.xcassets in Resources */,
 				B93410DF24E5CA91009F6AEF /* Main.storyboard in Resources */,
+				B9DA739E24F384250068927D /* MapStoryboard.storyboard in Resources */,
+				B934439C24E8957000F5B63E /* CocktailsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2389FCDE9FAADE5AB859DF60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCocktail/Pods-MyCocktail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCocktail/Pods-MyCocktail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCocktail/Pods-MyCocktail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63A6342F55937CBCCD84F511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCocktail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B93410D024E5CA91009F6AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DA2E9024E9AAAD005FAE92 /* ComponentStyles.swift in Sources */,
+				B934439E24E8F4EF00F5B63E /* AllCocktailsViewController.swift in Sources */,
 				B93410DC24E5CA91009F6AEF /* ViewController.swift in Sources */,
+				B9DA2E8D24E998AD005FAE92 /* SearchViewController.swift in Sources */,
 				B93410D824E5CA91009F6AEF /* AppDelegate.swift in Sources */,
+				B9DA2E9324E9CB55005FAE92 /* ConstApp.swift in Sources */,
+				B9DA2E8B24E99704005FAE92 /* RandomViewController.swift in Sources */,
+				B934439524E83F2000F5B63E /* Connection.swift in Sources */,
+				B934439224E77AB800F5B63E /* AllCocktails.swift in Sources */,
+				B9DA2EA324F02043005FAE92 /* DetailViewController.swift in Sources */,
+				B9DA2E9C24EB66E6005FAE92 /* CocktailCell.swift in Sources */,
+				B9DA2EA524F02526005FAE92 /* DetailCocktail.swift in Sources */,
 				B93410DA24E5CA91009F6AEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +471,7 @@
 		};
 		B93410E924E5CA97009F6AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCF2FD959D6CE139C372023 /* Pods-MyCocktail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +483,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenny.MyCocktail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B93410EA24E5CA97009F6AEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE83F9CE32A35A83DA54E8BA /* Pods-MyCocktail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenny.MyCocktail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -336,6 +527,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9DA2E9D24EB8EA9005FAE92 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B93410CC24E5CA91009F6AEF /* Project object */;
 }

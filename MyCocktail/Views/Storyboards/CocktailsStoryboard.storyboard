@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIf-sc-cHK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Cocktails View Controller-->
+        <scene sceneID="FWR-2g-LBA">
+            <objects>
+                <viewController id="rrX-4b-Wue" customClass="AllCocktailsViewController" customModule="MyCocktail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eoc-3Y-VeG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NWK-BC-IJb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="97" id="tFM-HJ-CBU" customClass="CocktailCell" customModule="MyCocktail" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tFM-HJ-CBU" id="8IB-ju-tgw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocktail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAC-cu-65S">
+                                                    <rect key="frame" x="117" y="31" width="277" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="9lg-iO-Ell"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="HcL-jO-qqZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="0.98823529409999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6mF-ei-oil">
+                                                    <rect key="frame" x="20" y="7" width="89" height="82"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="89" id="Bfj-dC-gvI"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.8980392157" green="0.34901960780000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="ZAC-cu-65S" firstAttribute="leading" secondItem="6mF-ei-oil" secondAttribute="trailing" constant="8" id="BWi-P2-Dpx"/>
+                                                <constraint firstItem="6mF-ei-oil" firstAttribute="leading" secondItem="8IB-ju-tgw" secondAttribute="leading" constant="20" id="FbD-uU-fsI"/>
+                                                <constraint firstItem="ZAC-cu-65S" firstAttribute="top" secondItem="8IB-ju-tgw" secondAttribute="topMargin" constant="20" id="NQc-gv-6F5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZAC-cu-65S" secondAttribute="bottom" constant="20" id="ZHF-N1-Shd"/>
+                                                <constraint firstItem="ZAC-cu-65S" firstAttribute="trailing" secondItem="8IB-ju-tgw" secondAttribute="trailingMargin" id="gmY-WN-hPi"/>
+                                                <constraint firstItem="6mF-ei-oil" firstAttribute="top" secondItem="8IB-ju-tgw" secondAttribute="top" constant="7" id="qW0-xL-VOo"/>
+                                                <constraint firstAttribute="bottom" secondItem="6mF-ei-oil" secondAttribute="bottom" constant="8" id="zJl-e3-qlE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cocktailName" destination="ZAC-cu-65S" id="Lxy-Z5-aXJ"/>
+                                            <outlet property="imgCocktail" destination="6mF-ei-oil" id="Wnb-h8-LVr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rrX-4b-Wue" id="XbG-WR-6Lx"/>
+                                    <outlet property="delegate" destination="rrX-4b-Wue" id="r5r-bY-V6Q"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.33725490200000002" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NWK-BC-IJb" secondAttribute="bottom" id="4Tx-tk-dS5"/>
+                            <constraint firstItem="NWK-BC-IJb" firstAttribute="top" secondItem="9z2-tw-ulN" secondAttribute="top" id="6J5-UM-jpV"/>
+                            <constraint firstItem="NWK-BC-IJb" firstAttribute="leading" secondItem="9z2-tw-ulN" secondAttribute="leading" id="ACq-wq-qMh"/>
+                            <constraint firstItem="NWK-BC-IJb" firstAttribute="trailing" secondItem="9z2-tw-ulN" secondAttribute="trailing" id="DwY-Be-bNG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9z2-tw-ulN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jBv-De-S2F"/>
+                    <connections>
+                        <outlet property="cocktailTableView" destination="NWK-BC-IJb" id="0Af-AQ-AN4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNk-KG-nOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="-466.07142857142856"/>
+        </scene>
+        <!--Cocktails-->
+        <scene sceneID="eg5-jX-KuO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UIf-sc-cHK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cocktails" image="all_cocktails" id="1ki-uJ-9X6"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="QVY-Xo-YIV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.89803921568627454" green="0.34901960784313724" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rrX-4b-Wue" kind="relationship" relationship="rootViewController" id="Rty-eh-oqr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfD-dH-y5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="-466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="all_cocktails" width="24" height="24"/>
+    </resources>
+</document>

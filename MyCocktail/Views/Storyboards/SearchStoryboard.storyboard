@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o3S-TY-i0a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="TMk-x7-Mch">
+            <objects>
+                <viewController id="jSQ-hH-MDb" customClass="SearchViewController" customModule="MyCocktail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lmf-7g-yQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyH-K1-bIU">
+                                <rect key="frame" x="8" y="8" width="298" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fOg-Xt-UDn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEditingChanged:" destination="jSQ-hH-MDb" eventType="editingChanged" id="vtb-FU-IbE"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWA-9q-feG" customClass="roundButton" customModule="MyCocktail" customModuleProvider="target">
+                                <rect key="frame" x="314" y="8" width="92" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sH5-Jq-VWj"/>
+                                    <constraint firstAttribute="width" constant="92" id="uQA-Fi-Pwf"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8980392157" green="0.34901960780000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dyH-K1-bIU" firstAttribute="top" secondItem="3Vy-XL-LqO" secondAttribute="top" constant="8" id="A8H-tv-3Xh"/>
+                            <constraint firstItem="rWA-9q-feG" firstAttribute="top" secondItem="3Vy-XL-LqO" secondAttribute="top" constant="8" id="H2e-ra-Iqb"/>
+                            <constraint firstItem="3Vy-XL-LqO" firstAttribute="trailing" secondItem="rWA-9q-feG" secondAttribute="trailing" constant="8" id="J5B-w3-woL"/>
+                            <constraint firstItem="rWA-9q-feG" firstAttribute="leading" secondItem="dyH-K1-bIU" secondAttribute="trailing" constant="8" id="ZQj-x5-klI"/>
+                            <constraint firstItem="dyH-K1-bIU" firstAttribute="leading" secondItem="3Vy-XL-LqO" secondAttribute="leading" constant="8" id="bAw-Xk-LH0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Vy-XL-LqO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MF3-Pn-blb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0LF-mk-CFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681.15942028985512" y="261.16071428571428"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="UfW-xd-UAP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o3S-TY-i0a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="wfi-5a-Hbv"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="gyU-6i-Ftj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.8980392157" green="0.34901960780000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jSQ-hH-MDb" kind="relationship" relationship="rootViewController" id="Hj1-Vg-95F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWq-VN-XS8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1591.304347826087" y="261.83035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
